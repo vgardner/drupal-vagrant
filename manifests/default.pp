@@ -59,10 +59,10 @@ apache::dotconf { 'custom':
 
 apache::module { 'rewrite': }
 
-apache::vhost { 'taskquare.dev':
-  server_name   => 'taskquare.dev',
+apache::vhost { 'drupal.dev':
+  server_name   => 'drupal.dev',
   serveraliases => [
-    'taskquare.dev'
+    'drupal.dev'
   ],
   docroot       => '/var/www/dev',
   port          => '80',
@@ -70,10 +70,10 @@ apache::vhost { 'taskquare.dev':
 ],
   priority      => '1',
 }
-apache::vhost { 'taskquare.api':
-  server_name   => 'taskquare.api',
+apache::vhost { 'drupal.api':
+  server_name   => 'drupal.api',
   serveraliases => [
-    'taskquare.api'
+    'drupal.api'
   ],
   docroot       => '/var/www/api',
   port          => '80',
@@ -196,14 +196,14 @@ class { 'mysql::server':
   config_hash   => { 'root_password' => 'root' }
 }
 
-mysql::db { 'tasksquare':
+mysql::db { 'drupal':
   grant    => [
     'ALL'
   ],
   user     => 'drupal',
   password => 'drupal',
   host     => 'localhost',
-  sql      => '/var/www/sql/taskquare.sql',
+  sql      => '/var/www/sql/drupal.sql',
   charset  => 'utf8',
   require  => Class['mysql::server'],
 }

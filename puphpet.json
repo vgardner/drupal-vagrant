@@ -5,7 +5,7 @@
         "local": {
             "url": "http:\/\/puppet-vagrant-boxes.puppetlabs.com\/debian-70rc1-x64-vbox4210.box",
             "name": "wheezy64",
-            "personal_name": "taskquaredev",
+            "personal_name": "drupal",
             "ip": "192.168.56.101",
             "memory": "1024",
             "port_forward": {
@@ -55,15 +55,15 @@
         ],
         "vhosts": {
             "1": {
-                "servername": "taskquare.dev",
-                "serveraliases": "taskquare.dev",
+                "servername": "drupal.dev",
+                "serveraliases": "drupal.dev",
                 "docroot": "\/var\/www\/dev",
                 "port": "80",
                 "envvars": ""
             },
             "2": {
-                "servername": "taskquare.api",
-                "serveraliases": "taskquare.api",
+                "servername": "drupal.api",
+                "serveraliases": "drupal.api",
                 "docroot": "\/var\/www\/api",
                 "port": "80",
                 "envvars": ""
@@ -137,9 +137,9 @@
                 ],
                 "user": "drupal",
                 "password": "<REMOVED>",
-                "dbname": "tasksquare",
+                "dbname": "drupal",
                 "host": "localhost",
-                "sql": "\/var\/www\/sql\/taskquare.sql"
+                "sql": "\/var\/www\/sql\/drupal.sql"
             }
         }
     },
