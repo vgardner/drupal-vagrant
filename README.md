@@ -1,7 +1,7 @@
-drupal-vagrant
+Drupal Vagrant
 ==============
 
-A project template for quickly building local Drupal development environments.
+A project template for quickly building local Drupal 8 compatible development environments.
 
 ### Requirements
 
