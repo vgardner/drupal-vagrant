@@ -29,8 +29,11 @@ A project template for quickly building local Drupal 8 compatible development en
         
 6. Access your VM via drupal.dev:8080 
 
-7. You can log into the VM via: 
+7. You can log into the VM via:
+
         host$ vagrant up
         host$ vagrant ssh
+        
+8. You can copy a sql dump into drupal-vagrant/sql named drupal.sql and Vagrant will automatically import your db on vagrant up.
 
 
